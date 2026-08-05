@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T00:46:50.674004Z",
+  "generated_at": "2026-08-05T01:39:37.595812Z",
   "floor_count": 19,
   "floors": [
     {
@@ -44,9 +44,9 @@
       "opens_at_time": null,
       "collapse_starts_at": 15845,
       "collapse_starts_at_time": "2017-01-14T10:28:00Z",
-      "duration_hours": null,
-      "collapse_at": null,
-      "collapse_at_time": null,
+      "duration_hours": 192,
+      "collapse_at": 27365,
+      "collapse_at_time": "2017-01-22T10:28:00Z",
       "staircases": 18750,
       "exits": null
     },
