@@ -48,12 +48,23 @@
                       "group": "yesoreyeram-infinity-datasource",
                       "kind": "DataQuery",
                       "spec": {
-                        "columns": [],
+                        "columns": [
+                          {
+                            "selector": "time",
+                            "text": "time",
+                            "type": "timestamp"
+                          },
+                          {
+                            "selector": "value",
+                            "text": "value",
+                            "type": "number"
+                          }
+                        ],
                         "filters": [],
                         "format": "table",
                         "global_query_id": "",
-                        "parser": "backend",
-                        "root_selector": "world",
+                        "parser": "jq-backend",
+                        "root_selector": ".world[] | select(.book \u003c= $book and .chapter \u003c= $chapter and (.metrics.crawlers_alive | type == \"number\")) | {\"time\": .time, \"value\": .metrics.crawlers_alive}",
                         "source": "url",
                         "type": "json",
                         "url": "/floors.json",
@@ -77,11 +88,48 @@
           "links": [],
           "title": "Crawlers Alive",
           "vizConfig": {
-            "group": "stat",
+            "group": "timeseries",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
                   "thresholds": {
                     "mode": "absolute",
                     "steps": [
@@ -99,19 +147,21 @@
                 "overrides": []
               },
               "options": {
-                "colorMode": "value",
-                "graphMode": "area",
-                "justifyMode": "auto",
-                "orientation": "auto",
-                "percentChangeColorMode": "standard",
-                "reduceOptions": {
-                  "calcs": [],
-                  "fields": "/.*/",
-                  "values": true
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
                 },
-                "showPercentChange": false,
-                "textMode": "auto",
-                "wideLayout": true
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
               }
             },
             "version": "13.0.6"
@@ -179,10 +229,10 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-6h",
+      "from": "2017-01-03T17:28:00.000Z",
       "hideTimepicker": false,
       "timezone": "browser",
-      "to": "now"
+      "to": "2017-01-10T20:28:00.000Z"
     },
     "title": "World",
     "variables": [
@@ -191,8 +241,8 @@
         "spec": {
           "allowCustomValue": false,
           "current": {
-            "text": "Carl's Doomsday Scenario",
-            "value": "2"
+            "text": "Dungeon Crawler Carl",
+            "value": "1"
           },
           "definition": "",
           "hide": "dontHide",
@@ -245,8 +295,8 @@
         "spec": {
           "allowCustomValue": false,
           "current": {
-            "text": "1",
-            "value": "1"
+            "text": "45",
+            "value": "45"
           },
           "definition": "",
           "hide": "dontHide",
