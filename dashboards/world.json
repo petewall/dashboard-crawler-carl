@@ -191,8 +191,8 @@
         "spec": {
           "allowCustomValue": false,
           "current": {
-            "text": "Dungeon Crawler Carl",
-            "value": "1"
+            "text": "Carl's Doomsday Scenario",
+            "value": "2"
           },
           "definition": "",
           "hide": "dontHide",
@@ -269,7 +269,7 @@
                 "format": "table",
                 "parser": "jq-backend",
                 "refId": "",
-                "root_selector": ".books[$book].chapters | [range(1; . + 1)] + [99]",
+                "root_selector": ".books[$book - 1].chapters | [range(1; . + 1)] + [99]",
                 "source": "url",
                 "type": "json",
                 "url": "/books.json",
