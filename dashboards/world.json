@@ -295,8 +295,8 @@
         "spec": {
           "allowCustomValue": false,
           "current": {
-            "text": "1",
-            "value": "1"
+            "text": "Completed",
+            "value": "99"
           },
           "definition": "",
           "hide": "dontHide",
@@ -319,7 +319,7 @@
                 "format": "table",
                 "parser": "jq-backend",
                 "refId": "",
-                "root_selector": ".books[$book - 1].chapters | [range(1; . + 1)] + [99]",
+                "root_selector": ".books[$book - 1].chapters | [range(1; . + 1)] + [99] | map({value: ., text: (if . == 99 then \"Completed\" else tostring end)})\n",
                 "source": "url",
                 "type": "json",
                 "url": "/books.json",
