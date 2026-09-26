@@ -139,7 +139,20 @@
         ]
       }
     },
-    "links": [],
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/petewall/dashboard-crawler-carl/blob/main/dashboards/world.json"
+      }
+    ],
     "liveNow": false,
     "preferences": {
       "layout": {
@@ -184,9 +197,9 @@
           "definition": "",
           "hide": "dontHide",
           "includeAll": false,
-          "label": "",
+          "label": "Book",
           "multi": false,
-          "name": "Book",
+          "name": "book",
           "options": [],
           "query": {
             "datasource": {
@@ -203,6 +216,60 @@
                 "parser": "jq-backend",
                 "refId": "",
                 "root_selector": ".books | to_entries[] | {\"index\": .key + 1, \"title\": .value.title}",
+                "source": "url",
+                "type": "json",
+                "url": "/books.json",
+                "url_options": {
+                  "data": "",
+                  "method": "GET"
+                }
+              },
+              "meta": {
+                "textField": "title",
+                "valueField": "index"
+              },
+              "queryType": "infinity",
+              "refId": "variable"
+            },
+            "version": "v0"
+          },
+          "refresh": "onDashboardLoad",
+          "regex": "",
+          "regexApplyTo": "value",
+          "skipUrlSync": false,
+          "sort": "disabled"
+        }
+      },
+      {
+        "kind": "QueryVariable",
+        "spec": {
+          "allowCustomValue": false,
+          "current": {
+            "text": "1",
+            "value": "1"
+          },
+          "definition": "",
+          "hide": "dontHide",
+          "includeAll": false,
+          "label": "Chapter",
+          "multi": false,
+          "name": "chapter",
+          "options": [],
+          "query": {
+            "datasource": {
+              "name": "PD0067CAD9A63E081"
+            },
+            "group": "yesoreyeram-infinity-datasource",
+            "kind": "DataQuery",
+            "spec": {
+              "infinityQuery": {
+                "columns": [],
+                "data": "values\nfoo\nbar\nbaz",
+                "filters": [],
+                "format": "table",
+                "parser": "jq-backend",
+                "refId": "",
+                "root_selector": ".books[$book].chapters | [range(1; . + 1)] + [99]",
                 "source": "url",
                 "type": "json",
                 "url": "/books.json",
