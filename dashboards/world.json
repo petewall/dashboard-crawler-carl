@@ -64,7 +64,7 @@
                         "format": "table",
                         "global_query_id": "",
                         "parser": "jq-backend",
-                        "root_selector": ".world[] | select(.book \u003c= $book and .chapter \u003c= $chapter and (.metrics.crawlers_alive | type == \"number\")) | {\"time\": .time, \"value\": .metrics.crawlers_alive}",
+                        "root_selector": ".world[] | select(((.book \u003c $book) or (.book == $book and .chapter \u003c= $chapter)) and (.metrics.crawlers_alive | type == \"number\")) | {\"time\": .time, \"value\": .metrics.crawlers_alive}",
                         "source": "url",
                         "type": "json",
                         "url": "/floors.json",
@@ -229,10 +229,10 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "2017-01-03T17:28:00.000Z",
+      "from": "2016-12-27T14:57:48.173Z",
       "hideTimepicker": false,
       "timezone": "browser",
-      "to": "2017-01-10T20:28:00.000Z"
+      "to": "2017-02-13T16:28:00.000Z"
     },
     "title": "World",
     "variables": [
@@ -241,8 +241,8 @@
         "spec": {
           "allowCustomValue": false,
           "current": {
-            "text": "Dungeon Crawler Carl",
-            "value": "1"
+            "text": "A Parade of Horribles",
+            "value": "8"
           },
           "definition": "",
           "hide": "dontHide",
@@ -295,8 +295,8 @@
         "spec": {
           "allowCustomValue": false,
           "current": {
-            "text": "45",
-            "value": "45"
+            "text": "1",
+            "value": "1"
           },
           "definition": "",
           "hide": "dontHide",
