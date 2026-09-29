@@ -1,0 +1,12 @@
+{
+  "books": [
+    { "title": "Dungeon Crawler Carl", "chapters": 47, "hasEpilogue": true },
+    { "title": "Carl's Doomsday Scenario", "chapters": 25, "hasEpilogue": true },
+    { "title": "The Dungeon Anarchist's Cookbook", "chapters": 34, "hasEpilogue": true },
+    { "title": "The Gate of the Feral Gods", "chapters": 34, "hasEpilogue": true },
+    { "title": "The Butcher's Masquerade", "chapters": 34, "hasEpilogue": true },
+    { "title": "The Eye of the Bedlam Bride", "chapters": 34, "hasEpilogue": true },
+    { "title": "This Inevitable Ruin", "chapters": 34, "hasEpilogue": true },
+    { "title": "A Parade of Horribles", "chapters": 34, "hasEpilogue": true }
+  ]
+}
