@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T01:39:37.595812Z",
+  "generated_at": "2026-09-26T17:17:11.944524Z",
   "floor_count": 19,
   "floors": [
     {
@@ -54,11 +54,11 @@
       "floor": 4,
       "opens_at": null,
       "opens_at_time": null,
-      "collapse_starts_at": null,
-      "collapse_starts_at_time": null,
-      "duration_hours": null,
-      "collapse_at": null,
-      "collapse_at_time": null,
+      "collapse_starts_at": 23405,
+      "collapse_starts_at_time": "2017-01-19T16:28:00Z",
+      "duration_hours": 240,
+      "collapse_at": 37805,
+      "collapse_at_time": "2017-01-29T16:28:00Z",
       "staircases": 9375,
       "exits": null
     },
@@ -66,11 +66,11 @@
       "floor": 5,
       "opens_at": null,
       "opens_at_time": null,
-      "collapse_starts_at": null,
-      "collapse_starts_at_time": null,
-      "duration_hours": null,
-      "collapse_at": null,
-      "collapse_at_time": null,
+      "collapse_starts_at": 37805,
+      "collapse_starts_at_time": "2017-01-29T16:28:00Z",
+      "duration_hours": 360,
+      "collapse_at": 59405,
+      "collapse_at_time": "2017-02-13T16:28:00Z",
       "staircases": 4688,
       "exits": null
     },
@@ -78,11 +78,11 @@
       "floor": 6,
       "opens_at": null,
       "opens_at_time": null,
-      "collapse_starts_at": null,
-      "collapse_starts_at_time": null,
-      "duration_hours": null,
-      "collapse_at": null,
-      "collapse_at_time": null,
+      "collapse_starts_at": 59405,
+      "collapse_starts_at_time": "2017-02-13T16:28:00Z",
+      "duration_hours": 408,
+      "collapse_at": 83885,
+      "collapse_at_time": "2017-03-02T16:28:00Z",
       "staircases": 2344,
       "exits": null
     },
@@ -90,11 +90,11 @@
       "floor": 7,
       "opens_at": null,
       "opens_at_time": null,
-      "collapse_starts_at": null,
-      "collapse_starts_at_time": null,
-      "duration_hours": null,
-      "collapse_at": null,
-      "collapse_at_time": null,
+      "collapse_starts_at": 82025,
+      "collapse_starts_at_time": "2017-03-01T09:28:00Z",
+      "duration_hours": 480,
+      "collapse_at": 110825,
+      "collapse_at_time": "2017-03-21T09:28:00Z",
       "staircases": 1172,
       "exits": null
     },
@@ -229,6 +229,333 @@
       "collapse_at_time": null,
       "staircases": null,
       "exits": null
+    }
+  ],
+  "world": [
+    {
+      "book": 1,
+      "chapter": 2,
+      "crawl_minutes": 17,
+      "time": "2017-01-03T10:40:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "A timer appeared in the upper right of my vision. It was at 4 days, 23 hours, and 48 minutes and counting down.",
+      "metrics": {
+        "floor_time_remaining": {
+          "value": 7188,
+          "confidence": "stated",
+          "quote": "4 days, 23 hours, and 48 minutes and counting down"
+        }
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 4,
+      "crawl_minutes": 40,
+      "time": "2017-01-03T11:03:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "My stats were: Strength: 6. Intelligence: 3. Constitution: 5. Dexterity: 5. Charisma: 4.",
+      "metrics": {
+        "crawlers_entered": {
+          "value": 13000000,
+          "confidence": "estimated",
+          "quote": "We had just under 13 million human crawlers make it through the gates and into the dungeon."
+        },
+        "crawlers_alive": 9999999,
+        "quote": "We are already down to under 10 million."
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 8,
+      "crawl_minutes": 245,
+      "time": "2017-01-03T14:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Time to Level Collapse: Four days, 20 hours.",
+      "metrics": {
+        "floor_time_remaining": 6960
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 9,
+      "crawl_minutes": 425,
+      "time": "2017-01-03T17:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "The first was a countdown until the level collapse, which was in four days and 17 hours.",
+      "metrics": {
+        "floor_time_remaining": 6780,
+        "crawlers_alive": 4322395
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 10,
+      "crawl_minutes": 1265,
+      "time": "2017-01-04T07:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Time to Level Collapse: 4 days, 3 hours.",
+      "metrics": {
+        "floor_time_remaining": 5940,
+        "crawlers_alive": 4148111
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 14,
+      "crawl_minutes": 1847,
+      "time": "2017-01-04T17:10:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "4,006,002. That's how many people were left when the show premiered.",
+      "metrics": {
+        "crawlers_alive": 4006002,
+        "borough_bosses_killed": 15,
+        "neighborhood_bosses_killed": {
+          "value": 1500,
+          "confidence": "estimated",
+          "quote": "over 1,500 neighborhood bosses killed"
+        }
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 19,
+      "crawl_minutes": 3245,
+      "time": "2017-01-05T16:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Time to Level Collapse: Two days and 18 hours.",
+      "metrics": {
+        "crawlers_alive": 3594517
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 26,
+      "crawl_minutes": 6815,
+      "time": "2017-01-08T03:58:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Time to Level Collapse: 6 hours 30 minutes.",
+      "metrics": {
+        "crawlers_alive": 2552085
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 31,
+      "crawl_minutes": 7205,
+      "time": "2017-01-08T10:28:00Z",
+      "precision": "exact",
+      "confidence": "stated",
+      "quote": "It flashed, going from just over two million to 1,292,526.",
+      "metrics": {
+        "crawlers_alive": 1292526
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 38,
+      "crawl_minutes": 8885,
+      "time": "2017-01-09T14:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Time to Level Collapse: 4 days, 20 hours.",
+      "metrics": {
+        "crawlers_alive": 1033992
+      }
+    },
+    {
+      "book": 1,
+      "chapter": 44,
+      "crawl_minutes": 10685,
+      "time": "2017-01-10T20:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Views: 1.7 Trillion. Followers: 439.9 Billion. Favorites: 42.4 Billion.",
+      "metrics": {
+        "crawlers_alive": 990303
+      }
+    },
+    {
+      "book": 2,
+      "chapter": 2,
+      "crawl_minutes": 15845,
+      "time": "2017-01-14T10:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "I glanced up, surprised. The second floor had collapsed.",
+      "metrics": {
+        "crawlers_alive": 700000
+      }
+    },
+    {
+      "book": 3,
+      "chapter": 2,
+      "crawl_minutes": 23405,
+      "time": "2017-01-19T16:28:00Z",
+      "precision": "floor",
+      "confidence": "stated",
+      "quote": "We had 389,441 remaining crawlers.",
+      "metrics": {
+        "crawlers_alive": 389441
+      }
+    },
+    {
+      "book": 4,
+      "chapter": 1,
+      "crawl_minutes": 37810,
+      "time": "2017-01-29T16:33:00Z",
+      "precision": "hour",
+      "confidence": "estimated",
+      "quote": "We'd stepped from the warehouse onto the fifth floor just a few minutes after the fourth level collapsed.",
+      "metrics": {
+        "crawlers_alive": 178887
+      }
+    },
+    {
+      "book": 4,
+      "chapter": 33,
+      "crawl_minutes": 55000,
+      "time": "2017-02-10T15:03:00Z",
+      "precision": "floor",
+      "confidence": "stated",
+      "quote": "99,754. We'd fallen under 100,000.",
+      "metrics": {
+        "crawlers_alive": 99754
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 1,
+      "crawl_minutes": 59405,
+      "time": "2017-02-13T16:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Time to Level Collapse: 17 Days... Views: 512 sextillion... Leaderboard rank: 1... Bounty: 3,000,000 gold... Remaining Crawlers: 85,223... Remaining Hunters: 360.",
+      "metrics": {
+        "crawlers_alive": 85223,
+        "hunters_remaining": 360
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 5,
+      "crawl_minutes": 59965,
+      "time": "2017-02-14T01:48:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Hunters Killed: 0.",
+      "metrics": {
+        "hunters_killed": 0
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 8,
+      "crawl_minutes": 60440,
+      "time": "2017-02-14T09:43:00Z",
+      "precision": "floor",
+      "confidence": "stated",
+      "quote": "Your Fear spell has been upgraded five levels! It is now level 10!",
+      "metrics": {
+        "hunters_remaining": 1002
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 9,
+      "crawl_minutes": 60995,
+      "time": "2017-02-14T18:58:00Z",
+      "precision": "hour",
+      "confidence": "derived",
+      "quote": "Time Until the Hunt Begins: 3.5 Hours... Remaining Hunters: 1013.",
+      "metrics": {
+        "crawlers_alive": 83995,
+        "hunters_remaining": 1013
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 34,
+      "crawl_minutes": 68560,
+      "time": "2017-02-20T01:03:00Z",
+      "precision": "floor",
+      "confidence": "stated",
+      "quote": "Trophy Count: 39. Remaining Hunters: 914.",
+      "metrics": {
+        "hunters_remaining": 914
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 37,
+      "crawl_minutes": 68700,
+      "time": "2017-02-20T03:23:00Z",
+      "precision": "floor",
+      "confidence": "stated",
+      "quote": "Donut had a Dodge skill of 11... With just over 66,000 crawlers left.",
+      "metrics": {
+        "crawlers_alive": 66001,
+        "quote": "With just over 66,000 crawlers left."
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 50,
+      "crawl_minutes": 74450,
+      "time": "2017-02-24T03:13:00Z",
+      "precision": "floor",
+      "confidence": "stated",
+      "quote": "Trophy Count: 52. Remaining Hunters: 673... Level 54? I asked.",
+      "metrics": {
+        "hunters_remaining": 673
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 56,
+      "crawl_minutes": 77885,
+      "time": "2017-02-26T12:28:00Z",
+      "precision": "hour",
+      "confidence": "derived",
+      "quote": "70 Hours until the Butcher's Masquerade... That's going to be like 600 people.",
+      "metrics": {
+        "hunters_remaining": {
+          "value": 600,
+          "confidence": "estimated",
+          "quote": "That's going to be like 600 people."
+        }
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 60,
+      "crawl_minutes": 81845,
+      "time": "2017-03-01T06:28:00Z",
+      "precision": "hour",
+      "confidence": "derived",
+      "quote": "Time to level collapse: One day, 10 hours. Hunters remaining: 290. Trophies Collected: 66.",
+      "metrics": {
+        "hunters_remaining": 290
+      }
+    },
+    {
+      "book": 5,
+      "chapter": 64,
+      "crawl_minutes": 82025,
+      "time": "2017-03-01T09:28:00Z",
+      "precision": "hour",
+      "confidence": "stated",
+      "quote": "Time Until the Butcher's Masquerade: 1 hour. Time Until Level Collapse: 31 hours. Total Number of Remaining Crawlers: 59,259.",
+      "metrics": {
+        "crawlers_alive": 59259
+      }
     }
   ]
 }
